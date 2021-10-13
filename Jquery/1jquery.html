@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="jquery3.6.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           //.............................................
+           
+           $("#prebut").dblclick(function(){
+           // alert("hai");
+            $("h1").prepend("AJAY ");
+           });
+           // ..........................................
+           
+           $("#appbut").click(function(){
+               //alert("append");
+               $("h1").append(" Ajay");
+           });
+           
+           //.................................................
+
+           $("#after").click(function(){
+               //alert("after");
+               $("h1").after(" Ajay");
+           });
+
+           //.................................................
+
+           $("#remove").click(function(){
+               //alert("remove");
+               $("h1").remove();
+           });
+           
+           //.............................................
+           $("#hide").click(function(){
+               //alert("append");
+               $("h1").hide();
+           });
+
+           //............................................................
+           $("#show").click(function(){
+               //alert("append");
+               $("h1").show();
+           });
+        });
+    </script>
+</head>
+<body>
+    
+    <input type="button" id="prebut" value="prepend"><br><br>
+    
+    <input type="button" id="appbut" value="append"><br><br>
+  
+    <input type="button" id="after" value="after"><br><br>
+  
+    <input type="button" id="remove" value="remove"><br><br>
+  
+    <input type="button" id="hide" value="hide"><br><br>
+  
+    <input type="button" id="show" value="show"><br><br>
+  
+    <h1> hi i am</h1>
+</body>
+</html>
